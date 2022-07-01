@@ -14,7 +14,9 @@ class MainTabBarViewController: UITabBarController {
         view.backgroundColor = .systemYellow
          
         // Do any additional setup after loading the view.
-        
+        let lib = UINavigationController(rootViewController: LibraryViewController())
+        let vc2 = UINavigationController(rootViewController: VocabViewController())
+        let vc3 = UINavigationController(rootViewController: SettingsViewController())
     }
 
 

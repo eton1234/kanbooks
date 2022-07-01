@@ -12,7 +12,7 @@
 		87FD9DF0286E507A00EC00DB /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD9DEF286E507A00EC00DB /* MainTabBarViewController.swift */; };
 		87FD9DF5286E507E00EC00DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87FD9DF4286E507E00EC00DB /* Assets.xcassets */; };
 		87FD9DF8286E507E00EC00DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FD9DF6286E507E00EC00DB /* LaunchScreen.storyboard */; };
-		87FD9E00286E548300EC00DB /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD9DFF286E548300EC00DB /* Library.swift */; };
+		87FD9E00286E548300EC00DB /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD9DFF286E548300EC00DB /* LibraryViewController.swift */; };
 		87FD9E03286E54F200EC00DB /* VocabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD9E02286E54F200EC00DB /* VocabViewController.swift */; };
 		87FD9E05286E556500EC00DB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD9E04286E556500EC00DB /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -25,7 +25,7 @@
 		87FD9DF4286E507E00EC00DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87FD9DF7286E507E00EC00DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87FD9DF9286E507E00EC00DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87FD9DFF286E548300EC00DB /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		87FD9DFF286E548300EC00DB /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		87FD9E02286E54F200EC00DB /* VocabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabViewController.swift; sourceTree = "<group>"; };
 		87FD9E04286E556500EC00DB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 		87FD9E01286E549600EC00DB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				87FD9DFF286E548300EC00DB /* Library.swift */,
+				87FD9DFF286E548300EC00DB /* LibraryViewController.swift */,
 				87FD9E02286E54F200EC00DB /* VocabViewController.swift */,
 				87FD9E04286E556500EC00DB /* SettingsViewController.swift */,
 			);
@@ -152,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87FD9DF0286E507A00EC00DB /* MainTabBarViewController.swift in Sources */,
-				87FD9E00286E548300EC00DB /* Library.swift in Sources */,
+				87FD9E00286E548300EC00DB /* LibraryViewController.swift in Sources */,
 				87FD9E03286E54F200EC00DB /* VocabViewController.swift in Sources */,
 				87FD9DEC286E507A00EC00DB /* AppDelegate.swift in Sources */,
 				87FD9DEE286E507A00EC00DB /* SceneDelegate.swift in Sources */,
