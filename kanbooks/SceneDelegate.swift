@@ -2,9 +2,10 @@
 //  SceneDelegate.swift
 //  kanbooks
 //
-//  Created by Keiko Chan on 6/30/22.
+//  Created by Ethan Chan on 6/30/22.
 //
 
+//note: this initlaizes the scenes basically?
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

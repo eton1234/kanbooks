@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  kanbooks
 //
-//  Created by Keiko Chan on 6/30/22.
+//  Created by Ethan Chan on 6/30/22.
 //
 
 import UIKit
