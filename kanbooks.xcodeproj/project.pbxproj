@@ -16,6 +16,11 @@
 		87FD9E00286E548300EC00DB /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD9DFF286E548300EC00DB /* LibraryViewController.swift */; };
 		87FD9E03286E54F200EC00DB /* VocabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD9E02286E54F200EC00DB /* VocabViewController.swift */; };
 		87FD9E05286E556500EC00DB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD9E04286E556500EC00DB /* SettingsViewController.swift */; };
+		AACD7AD02870026500118F1B /* R2Navigator in Frameworks */ = {isa = PBXBuildFile; productRef = AACD7ACF2870026500118F1B /* R2Navigator */; };
+		AACD7AD22870026500118F1B /* R2Shared in Frameworks */ = {isa = PBXBuildFile; productRef = AACD7AD12870026500118F1B /* R2Shared */; };
+		AACD7AD42870026500118F1B /* R2Streamer in Frameworks */ = {isa = PBXBuildFile; productRef = AACD7AD32870026500118F1B /* R2Streamer */; };
+		AACD7AD62870026500118F1B /* ReadiumLCP in Frameworks */ = {isa = PBXBuildFile; productRef = AACD7AD52870026500118F1B /* ReadiumLCP */; };
+		AACD7AD82870026500118F1B /* ReadiumOPDS in Frameworks */ = {isa = PBXBuildFile; productRef = AACD7AD72870026500118F1B /* ReadiumOPDS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACD7AD82870026500118F1B /* ReadiumOPDS in Frameworks */,
+				AACD7AD02870026500118F1B /* R2Navigator in Frameworks */,
+				AACD7AD42870026500118F1B /* R2Streamer in Frameworks */,
+				AACD7AD22870026500118F1B /* R2Shared in Frameworks */,
+				AACD7AD62870026500118F1B /* ReadiumLCP in Frameworks */,
 				489EBBD584137ED70E94E1FF /* Pods_kanbooks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +62,6 @@
 				454B50FEA7F3B8D8F6BB7470 /* Pods-kanbooks.debug.xcconfig */,
 				9E988887A1FDA26A8E5E9E42 /* Pods-kanbooks.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,6 +86,7 @@
 		87FD9DEA286E507A00EC00DB /* kanbooks */ = {
 			isa = PBXGroup;
 			children = (
+				AACD7AD9287003FB00118F1B /* New Group */,
 				87FD9E01286E549600EC00DB /* ViewControllers */,
 				87FD9DEB286E507A00EC00DB /* AppDelegate.swift */,
 				87FD9DED286E507A00EC00DB /* SceneDelegate.swift */,
@@ -96,6 +106,13 @@
 				87FD9E04286E556500EC00DB /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AACD7AD9287003FB00118F1B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		C9D38E31E39C5707D88F386E /* Frameworks */ = {
@@ -124,6 +141,13 @@
 			dependencies = (
 			);
 			name = kanbooks;
+			packageProductDependencies = (
+				AACD7ACF2870026500118F1B /* R2Navigator */,
+				AACD7AD12870026500118F1B /* R2Shared */,
+				AACD7AD32870026500118F1B /* R2Streamer */,
+				AACD7AD52870026500118F1B /* ReadiumLCP */,
+				AACD7AD72870026500118F1B /* ReadiumOPDS */,
+			);
 			productName = kanbooks;
 			productReference = 87FD9DE8286E507A00EC00DB /* kanbooks.app */;
 			productType = "com.apple.product-type.application";
@@ -152,6 +176,9 @@
 				Base,
 			);
 			mainGroup = 87FD9DDF286E507A00EC00DB;
+			packageReferences = (
+				AACD7ACE2870026400118F1B /* XCRemoteSwiftPackageReference "swift-toolkit" */,
+			);
 			productRefGroup = 87FD9DE9286E507A00EC00DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -433,6 +460,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AACD7ACE2870026400118F1B /* XCRemoteSwiftPackageReference "swift-toolkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/readium/swift-toolkit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AACD7ACF2870026500118F1B /* R2Navigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AACD7ACE2870026400118F1B /* XCRemoteSwiftPackageReference "swift-toolkit" */;
+			productName = R2Navigator;
+		};
+		AACD7AD12870026500118F1B /* R2Shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AACD7ACE2870026400118F1B /* XCRemoteSwiftPackageReference "swift-toolkit" */;
+			productName = R2Shared;
+		};
+		AACD7AD32870026500118F1B /* R2Streamer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AACD7ACE2870026400118F1B /* XCRemoteSwiftPackageReference "swift-toolkit" */;
+			productName = R2Streamer;
+		};
+		AACD7AD52870026500118F1B /* ReadiumLCP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AACD7ACE2870026400118F1B /* XCRemoteSwiftPackageReference "swift-toolkit" */;
+			productName = ReadiumLCP;
+		};
+		AACD7AD72870026500118F1B /* ReadiumOPDS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AACD7ACE2870026400118F1B /* XCRemoteSwiftPackageReference "swift-toolkit" */;
+			productName = ReadiumOPDS;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 87FD9DE0286E507A00EC00DB /* Project object */;
 }
